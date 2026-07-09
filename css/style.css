@@ -1,0 +1,353 @@
+/*==================================================
+                GOOGLE FONT
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==================================================
+                VARIABLES
+==================================================*/
+
+:root{
+
+    --color-principal:#222222;
+    --color-secundario:#b89b5e;
+    --color-claro:#fafafa;
+    --color-texto:#555555;
+    --sombra:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/*==================================================
+                GENERAL
+==================================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    color:var(--color-principal);
+    background:#fff;
+
+}
+
+section{
+
+    padding:90px 0;
+
+}
+
+img{
+
+    width:100%;
+
+}
+
+/*==================================================
+                NAVBAR
+==================================================*/
+
+.navbar{
+
+    padding:18px 0;
+    background:#fff!important;
+    transition:.3s;
+
+}
+
+.logo{
+
+    height:60px;
+    width:auto;
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+.nav-link{
+
+    font-weight:500;
+    margin-left:18px;
+    color:#444!important;
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--color-secundario)!important;
+
+}
+
+.btn-dark{
+
+    background:var(--color-principal);
+    border:none;
+    border-radius:50px;
+    padding:12px 30px;
+    transition:.3s;
+
+}
+
+.btn-dark:hover{
+
+    background:var(--color-secundario);
+    transform:translateY(-3px);
+
+}
+
+/*==================================================
+                HERO
+==================================================*/
+
+header{
+
+    padding:100px 0;
+
+}
+
+header h1{
+
+    font-size:3.7rem;
+    line-height:1.2;
+
+}
+
+header p{
+
+    color:var(--color-texto);
+    font-size:1.1rem;
+
+}
+
+.hero-img{
+
+    border-radius:30px;
+    box-shadow:var(--sombra);
+
+}
+
+/*==================================================
+                CATEGORIAS
+==================================================*/
+
+.categoria{
+
+    background:#fff;
+    transition:.35s;
+    border:1px solid #eee;
+
+}
+
+.categoria:hover{
+
+    transform:translateY(-10px);
+    box-shadow:var(--sombra);
+
+}
+
+.categoria i{
+
+    color:var(--color-secundario);
+
+}
+
+/*==================================================
+                TITULOS
+==================================================*/
+
+h2{
+
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.text-secondary{
+
+    color:#777!important;
+
+}
+
+/*==================================================
+                CARDS
+==================================================*/
+
+.card{
+
+    border:none;
+    border-radius:22px;
+    overflow:hidden;
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 18px 45px rgba(0,0,0,.15)!important;
+
+}
+
+.card img{
+
+    height:320px;
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:30px;
+
+}
+
+.card h4{
+
+    font-weight:700;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
+/*==================================================
+                BANNER
+==================================================*/
+
+.bg-dark{
+
+    background:#222!important;
+
+}
+
+.bg-dark h2{
+
+    font-size:2.2rem;
+
+}
+
+/*==================================================
+                BENEFICIOS
+==================================================*/
+
+.bi{
+
+    color:var(--color-secundario);
+
+}
+
+.bi.display-4{
+
+    font-size:3.3rem!important;
+
+}
+
+/*==================================================
+                FOOTER
+==================================================*/
+
+footer{
+
+    margin-top:50px;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+}
+
+/*==================================================
+                EFECTOS
+==================================================*/
+
+.shadow-sm{
+
+    box-shadow:0 5px 18px rgba(0,0,0,.05)!important;
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--sombra)!important;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+header{
+
+text-align:center;
+
+padding-top:60px;
+
+}
+
+header h1{
+
+font-size:2.6rem;
+
+}
+
+.hero-img{
+
+margin-top:40px;
+
+}
+
+.logo{
+
+height:50px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+header h1{
+
+font-size:2.1rem;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+.card img{
+
+height:250px;
+
+}
+
+}
